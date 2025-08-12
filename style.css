@@ -334,9 +334,10 @@ p {
     flex-direction: column;
     cursor: pointer;
     padding: 0.5rem;
-    z-index: 1001;
-    background: none;
-    border: none;
+    z-index: 10001;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--gray-dark);
+    border-radius: 5px;
 }
 
 .hamburger .bar {
@@ -708,13 +709,12 @@ p {
 
 .author-photo-simple {
     width: 100%;
-    max-width: 400px;
-    height: 400px;
+    max-width: 350px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    display: block;
 }
 
 .author-photo {
@@ -733,51 +733,10 @@ p {
 
 .author-image {
     position: relative;
-    display: inline-block;
-    text-align: center;
-    padding: 15px;
-}
-
-.author-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 25px;
-    border: 2px solid rgba(0,0,0,0.1);
-    background: var(--white);
-    z-index: 1;
-}
-
-.author-image::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    border-radius: 28px;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    opacity: 0;
-    z-index: 0;
-    animation: staticGlow 1.5s ease-in-out infinite;
-    filter: blur(1px);
-}
-
-@keyframes staticGlow {
-    0%, 50% {
-        opacity: 0;
-        box-shadow: none;
-    }
-    100% {
-        opacity: 0.3;
-        box-shadow: 
-            0 0 8px var(--primary-color),
-            0 0 16px var(--primary-color),
-            0 0 24px var(--secondary-color);
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 }
@@ -2104,12 +2063,13 @@ p {
 
     /* Mobile fixes for author image */
     .author-image {
-        padding: 10px;
+        padding: 0;
+        margin-bottom: 2rem;
     }
 
     .author-photo-simple {
-        max-width: 300px;
-        height: 300px;
+        max-width: 280px;
+        height: 280px;
     }
 
     /* Ensure navigation elements stay fixed */
@@ -2226,9 +2186,10 @@ p {
         font-size: 1.8rem;
     }
 
-    .author-photo {
-        max-width: 200px;
-        height: 200px;
+    .author-photo,
+    .author-photo-simple {
+        max-width: 220px;
+        height: 220px;
     }
 
     .book-actions {
