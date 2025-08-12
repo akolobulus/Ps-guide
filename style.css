@@ -335,12 +335,14 @@ p {
     cursor: pointer;
     padding: 0.5rem;
     z-index: 1001;
+    background: none;
+    border: none;
 }
 
 .hamburger .bar {
     width: 25px;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--gray-dark);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -360,30 +362,37 @@ p {
 
 @media (max-width: 768px) {
     .hamburger {
-        display: flex;
+        display: flex !important;
+        z-index: 10001;
     }
     
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 80px;
         flex-direction: column;
-        background-color: var(--primary-color);
+        background-color: var(--white);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        z-index: 1000;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
+        z-index: 10000;
+        padding: 1rem 0;
     }
     
     .nav-menu.active {
         left: 0;
     }
     
-    .nav-link {
+    .nav-menu .nav-link {
         padding: 1rem;
         display: block;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid var(--gray-light);
+        color: var(--gray-dark);
+    }
+    
+    .nav-menu .nav-link:hover {
+        background-color: var(--gray-light);
     }
 }
 
