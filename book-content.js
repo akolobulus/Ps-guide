@@ -5,76 +5,75 @@
 const bookContent = {
     title: "Simplest Guide to Public Speaking",
     author: "Favour Ebi Dakoru",
-    totalChapters: 12,
+    totalPages: 250, // Update this with actual page count from your PDF
+    totalChapters: 12, // Update this with actual chapter count from your PDF
+    amazonSoftCopyLink: "https://amazon.com/dp/YOUR_KINDLE_ASIN", // Replace with actual Amazon Kindle link
+    amazonHardCopyLink: "https://amazon.com/dp/YOUR_PAPERBACK_ASIN", // Replace with actual Amazon paperback link
     chapters: [
         {
             id: 1,
-            title: "Understanding Public Speaking",
+            title: "Introduction to Public Speaking", // Update with actual chapter title
             content: `
-                <h2>Chapter 1: Understanding Public Speaking</h2>
+                <h2>Chapter 1: Introduction to Public Speaking</h2>
                 
-                <h3>What is Public Speaking?</h3>
-                <p>Public speaking is the art of delivering a message to a live audience in a structured and deliberate manner. It's a skill that has shaped history, influenced millions, and remains one of the most powerful tools for personal and professional success.</p>
+                <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <p><strong>📖 Preview Chapter</strong> - This is a sample from the actual book content.</p>
+                </div>
                 
-                <p>At its core, public speaking is about communication—not just speaking, but connecting with your audience on a meaningful level. It's about sharing ideas, inspiring action, and creating understanding between you and your listeners.</p>
+                <h3>The Power of Effective Communication</h3>
+                <p>In today's fast-paced world, the ability to communicate effectively is more crucial than ever. Whether you're addressing a boardroom, speaking at a conference, or presenting to your community, your voice has the power to inspire, influence, and create lasting change...</p>
                 
-                <h3>Why Public Speaking Matters</h3>
-                <p>In today's interconnected world, the ability to speak confidently in public is more valuable than ever. Whether you're presenting to colleagues, addressing a community group, or speaking at a conference, your ability to communicate effectively can open doors and create opportunities.</p>
+                <p><em>[This is just a preview. The complete chapter contains detailed insights, practical exercises, and proven techniques.]</em></p>
                 
-                <p>Research shows that strong communication skills are among the most sought-after qualities in employees and leaders. Companies value individuals who can articulate ideas clearly, persuade others, and represent their organization with confidence.</p>
-                
-                <h3>Common Misconceptions</h3>
-                <p>Many people believe that public speaking is a talent you're born with—that some people are naturally gifted speakers while others are doomed to struggle. This couldn't be further from the truth.</p>
-                
-                <p>Public speaking is a skill that can be learned, practiced, and mastered by anyone willing to put in the effort. Even the most accomplished speakers started as nervous beginners who had to work at developing their abilities.</p>
-                
-                <h3>The Journey Ahead</h3>
-                <p>Throughout this book, we'll explore practical techniques, proven strategies, and actionable steps you can take to become a confident and effective public speaker. You'll learn how to overcome fear, structure your message, engage your audience, and deliver presentations that leave a lasting impact.</p>
-                
-                <p>Remember, every expert was once a beginner. Your journey to becoming a skilled public speaker starts with understanding that it's possible, practical, and within your reach.</p>
+                <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
+                    <h3>📚 Get the Complete Book</h3>
+                    <p>To read the full chapter and access all ${bookContent.totalPages} pages of expert guidance:</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
+                        <a href="${bookContent.amazonSoftCopyLink}" target="_blank" class="btn btn-primary">
+                            📱 Kindle Edition on Amazon
+                        </a>
+                        <a href="${bookContent.amazonHardCopyLink}" target="_blank" class="btn btn-secondary">
+                            📖 Paperback on Amazon
+                        </a>
+                    </div>
+                </div>
             `
         },
         {
             id: 2,
-            title: "Overcoming Fear and Anxiety",
+            title: "Conquering Fear and Building Confidence", // Update with actual chapter title
             content: `
-                <h2>Chapter 2: Overcoming Fear and Anxiety</h2>
+                <h2>Chapter 2: Conquering Fear and Building Confidence</h2>
                 
-                <h3>Understanding Speaker Anxiety</h3>
-                <p>Fear of public speaking, known as glossophobia, affects up to 75% of the population. If you feel nervous before speaking in public, you're not alone—you're part of the majority. Understanding this fear is the first step to conquering it.</p>
+                <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+                    <p><strong>📖 Preview Chapter</strong> - This is a sample from the actual book content.</p>
+                </div>
                 
-                <p>Speaker anxiety manifests in various ways: sweaty palms, racing heart, trembling voice, or feeling like your mind has gone blank. These physical symptoms are your body's natural response to what it perceives as a threat.</p>
+                <h3>Understanding the Fear Factor</h3>
+                <p>Fear of public speaking affects millions worldwide, but it doesn't have to control your life. In this chapter, you'll discover the root causes of speaking anxiety and learn proven techniques to transform fear into confidence...</p>
                 
-                <h3>The Root of Fear</h3>
-                <p>Most speaking fears stem from a few common sources:</p>
+                <h3>The Three Pillars of Confidence</h3>
+                <p>Through years of research and practice, I've identified three fundamental pillars that support unshakeable speaking confidence:</p>
                 <ul>
-                    <li>Fear of judgment or criticism</li>
-                    <li>Fear of making mistakes or forgetting what to say</li>
-                    <li>Fear of being the center of attention</li>
-                    <li>Fear of not meeting expectations</li>
-                    <li>Past negative experiences with public speaking</li>
+                    <li>Mental Preparation and Mindset Mastery</li>
+                    <li>Physical Techniques for Calm and Control</li>
+                    <li>Practical Skills and Systematic Practice</li>
                 </ul>
                 
-                <h3>Reframing Your Mindset</h3>
-                <p>The key to overcoming fear is to change how you think about public speaking. Instead of seeing it as a performance where you might fail, view it as a conversation where you're sharing something valuable with people who want to hear from you.</p>
+                <p><em>[This preview shows just the beginning. The complete chapter includes detailed exercises, case studies, and step-by-step confidence-building strategies.]</em></p>
                 
-                <p>Remember: Your audience wants you to succeed. They're not there hoping you'll fail—they're there because they're interested in what you have to say. This shift in perspective can dramatically reduce your anxiety.</p>
-                
-                <h3>Practical Techniques for Managing Anxiety</h3>
-                <p>Here are proven methods to help you manage speaking anxiety:</p>
-                
-                <p><strong>Deep Breathing:</strong> Practice slow, deep breaths to calm your nervous system. Try the 4-7-8 technique: inhale for 4 counts, hold for 7, exhale for 8.</p>
-                
-                <p><strong>Progressive Muscle Relaxation:</strong> Tense and release muscle groups throughout your body to release physical tension.</p>
-                
-                <p><strong>Visualization:</strong> Imagine yourself giving a successful presentation. See yourself speaking confidently and receiving positive feedback.</p>
-                
-                <p><strong>Positive Self-Talk:</strong> Replace negative thoughts with positive affirmations. Instead of "I'm going to mess up," try "I'm prepared and I have something valuable to share."</p>
-                
-                <h3>Building Confidence Through Preparation</h3>
-                <p>Confidence comes from preparation. The more thoroughly you prepare, the more confident you'll feel. This includes knowing your material inside and out, practicing your delivery, and having backup plans for potential challenges.</p>
-                
-                <p>Remember, even experienced speakers feel nervous sometimes. The difference is that they've learned to channel that nervous energy into enthusiasm and passion for their message.</p>
+                <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
+                    <h3>📚 Get the Complete Book</h3>
+                    <p>To read the full chapter and access all ${bookContent.totalPages} pages of expert guidance:</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
+                        <a href="${bookContent.amazonSoftCopyLink}" target="_blank" class="btn btn-primary">
+                            📱 Kindle Edition on Amazon
+                        </a>
+                        <a href="${bookContent.amazonHardCopyLink}" target="_blank" class="btn btn-secondary">
+                            📖 Paperback on Amazon
+                        </a>
+                    </div>
+                </div>
             `
         },
         {
@@ -372,28 +371,32 @@ function showPurchaseMessage() {
     modal.innerHTML = `
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Unlock Full Content</h2>
+                <h2>Get the Complete Book on Amazon</h2>
                 <span class="close" onclick="this.closest('.modal').remove()">&times;</span>
             </div>
             <div class="modal-body">
                 <div style="text-align: center; padding: 2rem;">
-                    <i class="fas fa-lock" style="font-size: 3rem; color: #D7263D; margin-bottom: 1rem;"></i>
-                    <h3>Get the Complete Book</h3>
-                    <p>You've reached the end of the free preview. To continue reading and access all 12 chapters, please purchase the full book.</p>
+                    <i class="fab fa-amazon" style="font-size: 3rem; color: #FF9900; margin-bottom: 1rem;"></i>
+                    <h3>Available on Amazon</h3>
+                    <p>You've reached the end of the free preview. Get the complete ${bookContent.totalPages}-page book with all ${bookContent.totalChapters} chapters on Amazon.</p>
                     
                     <div style="margin: 2rem 0;">
                         <h4>What you'll get:</h4>
                         <ul style="text-align: left; max-width: 300px; margin: 0 auto;">
-                            <li>✓ All 12 complete chapters</li>
-                            <li>✓ Bonus worksheets and templates</li>
-                            <li>✓ Practical exercises</li>
-                            <li>✓ Lifetime access</li>
+                            <li>✓ All ${bookContent.totalChapters} complete chapters</li>
+                            <li>✓ ${bookContent.totalPages} pages of expert guidance</li>
+                            <li>✓ Practical exercises and examples</li>
+                            <li>✓ Lifetime access to your purchase</li>
+                            <li>✓ Read on any device</li>
                         </ul>
                     </div>
                     
-                    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
-                        <a href="buy.html" class="btn btn-primary">
-                            <i class="fas fa-shopping-cart"></i> Buy Now
+                    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
+                        <a href="${bookContent.amazonSoftCopyLink}" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-amazon"></i> Kindle Edition
+                        </a>
+                        <a href="${bookContent.amazonHardCopyLink}" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-book"></i> Paperback
                         </a>
                         <button onclick="this.closest('.modal').remove()" class="btn btn-outline">
                             Continue Preview

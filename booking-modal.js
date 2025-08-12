@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeBookingModal() {
     const modal = document.getElementById('bookingModal');
     const form = document.getElementById('bookingForm');
-    
+
     if (form) {
         form.addEventListener('submit', handleBookingSubmission);
-        
+
         // Add real-time validation
         const inputs = form.querySelectorAll('input, select, textarea');
         inputs.forEach(input => {
@@ -19,7 +19,7 @@ function initializeBookingModal() {
             input.addEventListener('input', () => clearFieldError(input));
         });
     }
-    
+
     // Close modal when clicking outside
     if (modal) {
         modal.addEventListener('click', function(e) {
@@ -28,7 +28,7 @@ function initializeBookingModal() {
             }
         });
     }
-    
+
     // Close modal with Escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modal && modal.style.display === 'block') {
@@ -43,13 +43,13 @@ function openBookingModal() {
     if (modal) {
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
-        
+
         // Focus on first input
         const firstInput = modal.querySelector('input, select, textarea');
         if (firstInput) {
             setTimeout(() => firstInput.focus(), 100);
         }
-        
+
         // Add animation
         modal.querySelector('.modal-content').style.animation = 'slideIn 0.3s ease';
     }
@@ -61,7 +61,7 @@ function closeBookingModal() {
     if (modal) {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
-        
+
         // Clear form
         const form = document.getElementById('bookingForm');
         if (form) {
@@ -74,19 +74,19 @@ function closeBookingModal() {
 // Handle form submission
 function handleBookingSubmission(e) {
     e.preventDefault();
-    
+
     const form = e.target;
     const formData = new FormData(form);
     const submitBtn = form.querySelector('button[type="submit"]');
-    
+
     // Validate form
     if (!validateBookingForm(form)) {
         return;
     }
-    
+
     // Show loading state
     setButtonLoading(submitBtn, true);
-    
+
     // Simulate API call
     setTimeout(() => {
         // Create booking data object
@@ -99,21 +99,25 @@ function handleBookingSubmission(e) {
             notes: formData.get('notes'),
             timestamp: new Date().toISOString()
         };
-        
-        // In a real implementation, this would send to a server
-        console.log('Booking submitted:', bookingData);
-        
+
+        // Send booking data to email
+        sendBookingEmail(bookingData);
+
         // Show success message
-        showBookingSuccess(bookingData);
-        
+        if (window.showNotification) {
+            window.showNotification('Booking request submitted successfully! We will contact you soon.', 'success');
+        } else {
+            alert('Booking request submitted successfully! We will contact you soon.');
+        }
+
         // Reset form and close modal
         form.reset();
         setButtonLoading(submitBtn, false);
-        
+
         setTimeout(() => {
             closeBookingModal();
         }, 2000);
-        
+
     }, 1500);
 }
 
@@ -126,16 +130,16 @@ function validateBookingForm(form) {
         { name: 'purpose', label: 'Purpose of Booking', type: 'select' },
         { name: 'bookingDate', label: 'Booking Date', type: 'date' }
     ];
-    
+
     let isValid = true;
-    
+
     requiredFields.forEach(field => {
         const input = form.querySelector(`[name="${field.name}"]`);
         if (!validateField(input)) {
             isValid = false;
         }
     });
-    
+
     return isValid;
 }
 
@@ -144,20 +148,20 @@ function validateField(field) {
     const value = field.value.trim();
     const fieldName = field.name;
     const fieldLabel = field.closest('.form-group').querySelector('label').textContent.replace(' *', '');
-    
+
     clearFieldError(field);
-    
+
     // Check if required field is empty
     if (field.hasAttribute('required') && !value) {
         showFieldError(field, `${fieldLabel} is required`);
         return false;
     }
-    
+
     // Skip further validation if field is empty and not required
     if (!value) {
         return true;
     }
-    
+
     // Specific field validations
     switch (fieldName) {
         case 'fullName':
@@ -170,49 +174,49 @@ function validateField(field) {
                 return false;
             }
             break;
-            
+
         case 'email':
             if (!isValidEmail(value)) {
                 showFieldError(field, 'Please enter a valid email address');
                 return false;
             }
             break;
-            
+
         case 'phone':
             if (!isValidPhone(value)) {
                 showFieldError(field, 'Please enter a valid phone number');
                 return false;
             }
             break;
-            
+
         case 'bookingDate':
             const selectedDate = new Date(value);
             const today = new Date();
             today.setHours(0, 0, 0, 0);
-            
+
             if (selectedDate < today) {
                 showFieldError(field, 'Please select a future date');
                 return false;
             }
-            
+
             // Check if date is too far in the future (1 year)
             const oneYearFromNow = new Date();
             oneYearFromNow.setFullYear(oneYearFromNow.getFullYear() + 1);
-            
+
             if (selectedDate > oneYearFromNow) {
                 showFieldError(field, 'Please select a date within the next year');
                 return false;
             }
             break;
     }
-    
+
     return true;
 }
 
 // Show field error
 function showFieldError(field, message) {
     clearFieldError(field);
-    
+
     const errorDiv = document.createElement('div');
     errorDiv.className = 'field-error';
     errorDiv.textContent = message;
@@ -224,12 +228,12 @@ function showFieldError(field, message) {
         align-items: center;
         gap: 0.25rem;
     `;
-    
+
     // Add error icon
     const errorIcon = document.createElement('i');
     errorIcon.className = 'fas fa-exclamation-circle';
     errorDiv.insertBefore(errorIcon, errorDiv.firstChild);
-    
+
     field.parentNode.appendChild(errorDiv);
     field.style.borderColor = '#D7263D';
     field.classList.add('error');
@@ -249,7 +253,7 @@ function clearFieldError(field) {
 function clearAllErrors() {
     const errors = document.querySelectorAll('.field-error');
     errors.forEach(error => error.remove());
-    
+
     const errorFields = document.querySelectorAll('.error');
     errorFields.forEach(field => {
         field.style.borderColor = '';
@@ -267,12 +271,12 @@ function isValidEmail(email) {
 function isValidPhone(phone) {
     // Remove all non-digit characters
     const cleaned = phone.replace(/\D/g, '');
-    
+
     // Check if it's a valid length (10-15 digits)
     if (cleaned.length < 10 || cleaned.length > 15) {
         return false;
     }
-    
+
     // Check if it starts with a valid country code or area code
     return /^(\+?1-?)?(\d{3,4}[-.]?)?\d{3}[-.]?\d{4}$/.test(phone) || 
            /^(\+?234|0)?[789]\d{9}$/.test(cleaned); // Nigerian numbers
@@ -294,7 +298,7 @@ function setButtonLoading(button, isLoading) {
 function showBookingSuccess(bookingData) {
     const modal = document.getElementById('bookingModal');
     const modalBody = modal.querySelector('.modal-body');
-    
+
     // Create success content
     const successContent = document.createElement('div');
     successContent.className = 'booking-success';
@@ -305,7 +309,7 @@ function showBookingSuccess(bookingData) {
             </div>
             <h3 style="color: #10B981; margin-bottom: 1rem;">Booking Request Submitted!</h3>
             <p style="margin-bottom: 1.5rem;">Thank you, ${bookingData.fullName}! Your booking request has been submitted successfully.</p>
-            
+
             <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: left;">
                 <h4 style="margin-bottom: 1rem; color: #001F54;">Booking Details:</h4>
                 <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
@@ -317,7 +321,7 @@ function showBookingSuccess(bookingData) {
                     ${bookingData.notes ? `<div><strong>Notes:</strong> ${bookingData.notes}</div>` : ''}
                 </div>
             </div>
-            
+
             <div style="background: #e3f2fd; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
                 <h4 style="color: #1976d2; margin-bottom: 0.5rem;">What's Next?</h4>
                 <ul style="text-align: left; margin: 0; padding-left: 1.5rem; color: #424242;">
@@ -327,18 +331,18 @@ function showBookingSuccess(bookingData) {
                     <li>We'll work together to finalize your booking</li>
                 </ul>
             </div>
-            
+
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 1.5rem;">
                 <i class="fas fa-info-circle"></i> 
                 A confirmation email has been sent to ${bookingData.email}
             </p>
         </div>
     `;
-    
+
     // Replace modal content
     modalBody.innerHTML = '';
     modalBody.appendChild(successContent);
-    
+
     // Update modal header
     const modalHeader = modal.querySelector('.modal-header h2');
     if (modalHeader) {
@@ -370,6 +374,26 @@ function formatDate(dateString) {
     });
 }
 
+// Function to send booking email (placeholder)
+function sendBookingEmail(bookingData) {
+    // This is a placeholder. In a real application, you would use a backend service or an email API
+    // to send the email to favour.dakoru@gmail.com with the booking details.
+    console.log(`Sending booking details to favour.dakoru@gmail.com:`, bookingData);
+
+    // Example using a hypothetical email service (e.g., EmailJS, or a custom backend endpoint)
+    // emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    //     to_email: "favour.dakoru@gmail.com",
+    //     from_name: bookingData.fullName,
+    //     message: `Booking details:\nName: ${bookingData.fullName}\nEmail: ${bookingData.email}\nPhone: ${bookingData.phone}\nPurpose: ${formatPurpose(bookingData.purpose)}\nDate: ${formatDate(bookingData.bookingDate)}\nNotes: ${bookingData.notes || 'N/A'}`
+    // })
+    // .then(function(response) {
+    //     console.log('Email sent successfully!', response);
+    // }, function(error) {
+    //     console.error('Failed to send email:', error);
+    // });
+}
+
+
 // Export functions for global access
 window.openBookingModal = openBookingModal;
 window.closeBookingModal = closeBookingModal;
@@ -380,32 +404,32 @@ bookingStyles.textContent = `
     .booking-success {
         animation: fadeIn 0.5s ease;
     }
-    
+
     .field-error {
         animation: shake 0.5s ease;
     }
-    
+
     @keyframes shake {
         0%, 100% { transform: translateX(0); }
         25% { transform: translateX(-5px); }
         75% { transform: translateX(5px); }
     }
-    
+
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
     }
-    
+
     .form-group input.error,
     .form-group select.error,
     .form-group textarea.error {
         animation: shake 0.5s ease;
     }
-    
+
     .modal-content {
         animation: slideIn 0.3s ease;
     }
-    
+
     @keyframes slideIn {
         from { transform: translateY(-50px); opacity: 0; }
         to { transform: translateY(0); opacity: 1; }
