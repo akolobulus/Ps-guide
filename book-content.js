@@ -132,29 +132,63 @@ const bookContent = {
             title: "The Law of Charisma",
             content: `
                 <h2>Chapter Four: The Law of Charisma</h2>
-                <h3 style="color: var(--secondary-color); margin-bottom: 2rem;">Coming Soon in the Full Book</h3>
+                <h3 style="color: var(--secondary-color); margin-bottom: 2rem;">Discovering Your Personal Style and Magnetic Presence</h3>
 
-                <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
-                    <p><strong>📖 Preview Available</strong> - This chapter covers the fourth fundamental law of public speaking.</p>
+                <p>In the vibrant streets of Nigeria, where voices rise above the din of traffic and marketplaces pulse with stories, charisma stands as a force more powerful than a microphone. The most memorable speakers aren't always those with the deepest vocabulary or the most degrees; they are those who can command a room, light up a crowd, and leave an imprint on every heart that listens. This is the essence of the Law of Charisma.</p>
+
+                <p>Charisma is not a gimmick. It is a blend of authenticity, passion, presence, and personal expression. It cannot be mimicked; it must be cultivated. If you've ever watched Pastor E.A. Adeboye, you'll notice how calm and soft-spoken he is, yet his presence alone can silence a crowd of thousands. On the other hand, someone like Dr. Paul Enenche bursts with fire, passion, and vivid expression, moving his audience with energy and conviction. Both are charismatic, yet their styles are worlds apart. This underscores one truth: charisma is not a personality type; it is a personality expressed.</p>
+
+                <h3>The Silent Language of Connection</h3>
+                <p>Let me take you to a moment in the University of Lagos where I once attended a public speaking engagement. There was this one speaker, Ijeoma, who stepped on stage with no notes, just a confident smile and her Ankara blouse radiating color. She started with a question:</p>
+
+                <p><em>"Have you ever been told you're too much?"</em></p>
+
+                <p>The hall erupted in laughter, especially from the students who knew what it meant to be misunderstood. In just seconds, she had everyone hooked. Why? Her energy was contagious, her expressions alive, and her confidence unwavering. That day, she didn't just win the heart of the audience; she won our respect.</p>
+
+                <p>Charisma draws people in. It makes the audience feel something—a connection, a spark, a pull that goes beyond words. In public speaking, it is not enough to just talk. You must speak in a way that your presence alone becomes memorable. This is where passion plays a pivotal role. When you talk about something you care deeply about, it shows. Your eyes light up, your voice carries rhythm, and your energy fills the room.</p>
+
+                <h3>Finding Your Authentic Voice</h3>
+                <p>Think about your favorite Nigerian musician. Maybe it's Burna Boy, Asa, or Davido. When they perform, they aren't just singing lyrics. They are sharing an experience. The same principle applies to speaking. Your audience is not looking for perfection; they are looking for passion.</p>
+
+                <p>But let's be real—charisma is not all hype and high energy. It's also in the quiet strength of your character. It's in how you treat your audience before and after your talk. It's in the way you carry yourself, the respect you show, the stories you tell, and the values you uphold. During a conference in Ikeja, I watched a guest speaker walk into the room 15 minutes early. He wasn't announced yet, but he greeted the ushers, smiled at a janitor, and even helped arrange chairs. When it was time for him to speak, he didn't need an introduction. The audience was already won over. That's charisma—when who you are aligns with what you say.</p>
+
+                <h3>Discovering Your Charismatic Style</h3>
+                <p>Discovering your charisma means knowing yourself. Are you the humorous type, like Ali Baba or Bovi, who can wrap deep truths in laughter? Or are you the poetic type, like Chimamanda Ngozi Adichie, whose calm and precise delivery pierces minds and moves hearts? The key is not to copy anyone blindly but to borrow brilliance while finding your own voice.</p>
+
+                <p>Let me share a story from the University of Lagos. A guest lecturer was invited to speak on entrepreneurship. He came in dressed simply, without much flair. Some students underestimated him. But when he began, he shared his journey from selling recharge cards at Surulere to owning a logistics company with over 30 staff. His honesty, humility, and humor transformed the atmosphere. The students laughed, asked questions, and even lined up for selfies afterward. What made the difference? Charisma grounded in authenticity.</p>
+
+                <h3>Tips to Grow Your Charisma</h3>
+                <p>Charisma is your superpower. It helps you connect, communicate, and compel. Whether you are a student leader, a teacher, a pastor, or a business executive, your influence will multiply when people can feel your heart through your words.</p>
+
+                <p>Here are a few tips to grow in charisma:</p>
+                <ol>
+                    <li><strong>Know your story:</strong> Share real-life experiences. People connect with people, not robots.</li>
+                    <li><strong>Embrace your energy:</strong> Speak with passion. Be enthusiastic about your subject.</li>
+                    <li><strong>Master your body language:</strong> Eye contact, gestures, and posture can communicate more than words.</li>
+                    <li><strong>Develop emotional intelligence:</strong> Read the room. Respond with empathy. Adjust your tone.</li>
+                    <li><strong>Be approachable:</strong> Smile, listen, and be kind. The way you make people feel is part of your charisma.</li>
+                </ol>
+
+                <p>Remember, in Nigeria, we don't just listen with our ears; we listen with our hearts, our eyes, and even our body language. Your charisma is what brings your message to life. It's what makes a teacher unforgettable, a pastor magnetic, a lecturer engaging, and a student speaker admired.</p>
+
+                <p>In the end, the Law of Charisma teaches us that people may forget what you said, but they will never forget how you made them feel. So speak with fire, walk with grace, and let your presence tell your story before your words even begin.</p>
+
+                <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                    <h4 style="color: #2d5a2d; margin-bottom: 1rem;"><i class="fas fa-clipboard-check"></i> ACTION STEP</h4>
+                    <p style="margin-bottom: 0;">Grab a notebook or open a note-taking app on your phone. Throughout the day, jot down moments where you felt particularly confident or charismatic. It could be during a conversation, a meeting, or even while presenting an idea. Be specific about what made you feel that way and note down any feedback you received. This exercise will help you become more aware of your natural charisma and identify areas for improvement.</p>
                 </div>
 
-                <p>Discover how to develop your personal speaking style and magnetic presence that captivates audiences. Learn the secrets of charismatic speakers and how to authentically connect with any audience.</p>
-
-                <h3>What You'll Learn:</h3>
-                <ul>
-                    <li>Understanding authentic charisma vs. forced personality</li>
-                    <li>Developing your unique speaking voice</li>
-                    <li>Building magnetic presence on stage</li>
-                    <li>Self-exploration techniques for speakers</li>
-                    <li>Connecting with diverse audiences</li>
-                </ul>
+                <div style="background: #fff3cd; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                    <h4 style="color: #856404; margin-bottom: 1rem;"><i class="fas fa-heart"></i> CONFIDENCE BOOST</h4>
+                    <p style="margin-bottom: 0;">Find a quiet space with a mirror. Spend just a few minutes practicing confident body language. Stand tall, with your shoulders back and head held high. Practice making eye contact with your reflection, and experiment with different gestures and facial expressions. Notice how these small adjustments can make you feel more confident and charismatic. Keep refining your body language until it feels natural and effortless.</p>
+                </div>
 
                 <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
-                    <h3>📚 Get the Complete Book</h3>
-                    <p>Access all 6 laws including The Law of Charisma with practical exercises and real-world examples:</p>
+                    <h3>📚 Continue Your Journey</h3>
+                    <p>You've learned about The Law of Charisma. Continue reading to master all 6 laws:</p>
                     <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
                         <a href="buy.html" class="btn btn-primary">
-                            📖 Buy the Complete Book
+                            📖 Get the Complete Book
                         </a>
                     </div>
                 </div>
@@ -165,29 +199,68 @@ const bookContent = {
             title: "The Law of Dress Code",
             content: `
                 <h2>Chapter Five: The Law of Dress Code</h2>
-                <h3 style="color: var(--secondary-color); margin-bottom: 2rem;">Coming Soon in the Full Book</h3>
+                <h3 style="color: var(--secondary-color); margin-bottom: 2rem;">Your Silent Message Before You Speak</h3>
 
-                <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
-                    <p><strong>📖 Preview Available</strong> - This chapter covers the fifth fundamental law of public speaking.</p>
+                <p>Being a presenter or public speaker, your appearance is the initial silent dialogue with your audience. Before you utter a single word, your audience has already formed a perception based on how you look. Your attire, grooming, and overall presentation echo volumes about your professionalism, your preparation, and even your personality. This non-verbal language is powerful, and it can either reinforce your message or distract from it. Thus, understanding and mastering the law of dress code is a crucial component of every speaker's toolkit.</p>
+
+                <h3>The Strategic Power of Appearance</h3>
+                <p>Your clothing is not merely fabric draped over your body. It is a strategic communication tool. Every time you step on stage or in front of a camera, you're entering a contract with your audience. They are granting you their time and attention, and in return, they expect value—not just in words, but in presence.</p>
+
+                <p>Respecting the event's dress code is your first nod to the occasion's importance. It shows that you understand the tone, the culture, and the expectations. Whether it's a corporate event, a youth seminar, a religious gathering, or a community town hall, dressing in alignment with the context signals your sensitivity and readiness. When in doubt, it's better to be slightly overdressed than underdressed. It communicates that you care.</p>
+
+                <h3>Dressing for the Audience</h3>
+                <p>One of the most overlooked aspects of speaking preparation is researching your audience. You wouldn't wear a flashy, sequined jacket to a conservative business meeting or show up in a three-piece suit to speak to high school students. Your audience's age, profession, social background, and even cultural context should influence your wardrobe choices.</p>
+
+                <p>If you're speaking to young entrepreneurs, a smart casual outfit with clean sneakers and a stylish jacket may resonate more. If it's a panel at a financial institution, a well-fitted suit with a conservative tie is more appropriate. Think of your clothing as a bridge, helping your message cross over from your mind to theirs.</p>
+
+                <h3>The Environment Matters</h3>
+                <p>Environmental factors must be considered. Will the event be held indoors or outdoors? Is the venue air-conditioned or open-air? Will you be on an elevated stage or on the same level as your audience? What is the weather forecast? These questions are not trivial; they influence comfort, movement, and perception.</p>
+
+                <p>An outdoor event in Nigeria at noon under the blazing sun requires light, breathable fabrics, preferably in brighter colors. You don't want to be drenched in sweat before the first applause. Conversely, speaking in a chilly, air-conditioned hall might require layering with a blazer or sweater. Your comfort translates to confidence. If you're fidgeting with your outfit or adjusting your sleeves mid-sentence, your audience notices.</p>
+
+                <h3>Dress Code Beyond Clothing</h3>
+                <p>Dress code extends beyond garments. Your hairstyle, accessories, grooming, and even scent matter. A clean, neat hairstyle suggests discipline and personal care. Avoid extravagant styles unless they align with the brand you're portraying or the audience you're addressing.</p>
+
+                <p>For both men and women, moderation is key. Ladies, minimal jewelry that complements rather than competes with your message is ideal. Gentlemen, your belt should match your shoes, and avoid over-accessorizing with chains or flashy cufflinks.</p>
+
+                <h3>The Art of Color Coordination</h3>
+                <p>Colors communicate emotions. Bright colors often exude energy and positivity, while dark colors signify authority and formality. Understanding how colors blend is essential. For men, a vibrant shirt paired with black or navy pants and a tie that is slightly darker than the shirt creates a visually balanced ensemble. Avoid an all-black outfit unless you're going for a specific dramatic effect. Even the iconic Men in Black knew the value of contrast—they wore white shirts under their black suits for a reason. (Chuckles)</p>
+
+                <p>For women, bold colors can be empowering when used thoughtfully. A red blazer, for instance, conveys confidence. Pastel tones can evoke warmth and approachability. Avoid clashing colors unless you're a style icon who knows how to own it. The goal is not to distract, but to enhance.</p>
+
+                <h3>Grooming and the Power of Scent</h3>
+                <p>Personal grooming is non-negotiable. Your nails, breath, and general hygiene speak before your words do. A subtle fragrance adds an extra layer of charm. It's a small detail, but a pleasant scent can uplift spirits, especially if you're speaking at a long, exhausting event. But be mindful—go easy on the cologne or perfume. You want to leave a memory, not a headache.</p>
+
+                <p>For men, a clean shave or well-maintained beard makes a difference. For women, neatly styled hair and light makeup (if used) can create a polished, professional look. These touches build trust and show that you took time to prepare for your audience.</p>
+
+                <h3>Footwear: The Unsung Hero</h3>
+                <p>Never underestimate the power of good shoes. Your shoes tell a story of how far you've walked, how seriously you take yourself, and how you approach life. Shiny, well-kept, and comfortable footwear is more than a finishing touch; it is a cornerstone of your presentation.</p>
+
+                <p>Imagine wearing stylish shoes that hurt your feet. Halfway through your talk, you're shifting your weight, wincing slightly. That discomfort becomes a distraction. On the other hand, a clean, comfortable pair of shoes boosts your posture, keeps you grounded, and gives you that final layer of confidence. Think of your shoes as your foundation. Build strong.</p>
+
+                <h3>Intention in Every Thread</h3>
+                <p>As you step onto that stage, remember that your attire is not an afterthought. It is part of the performance. Your look should say: "I respect you. I respect this moment. I am ready." Whether you're standing before five people or five thousand, show up with intention.</p>
+
+                <p>There is a story told about a young speaker who once showed up at a CEO summit in a rumpled shirt and worn-out shoes. Despite the brilliance of his ideas, the audience's takeaway was: "He wasn't ready." Contrast this with another speaker who wore a modest, sharp outfit, carried herself with poise, and spoke with clarity. The response? "She looked the part, and she played it well."</p>
+
+                <p>The law of dress code is not about vanity. It's about value. It is about showing up with the excellence your message deserves. It's about visual alignment with your verbal expression. When you honor this law, your audience sees a speaker who is not just heard but seen—with intention and care. And that, my friend, is unforgettable.</p>
+
+                <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                    <h4 style="color: #2d5a2d; margin-bottom: 1rem;"><i class="fas fa-clipboard-check"></i> ACTION STEP</h4>
+                    <p style="margin-bottom: 0;">Create a vision board or Pinterest board showcasing your ideal speaking attire, considering factors such as venue, audience, and personal style.</p>
                 </div>
 
-                <p>Learn how your appearance sends powerful messages before you even speak. Master the art of dressing appropriately for different speaking contexts and audiences.</p>
-
-                <h3>What You'll Learn:</h3>
-                <ul>
-                    <li>The psychology of first impressions</li>
-                    <li>Dressing for different speaking contexts</li>
-                    <li>Cultural considerations in dress code</li>
-                    <li>Building confidence through appropriate attire</li>
-                    <li>Professional presentation guidelines</li>
-                </ul>
+                <div style="background: #fff3cd; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                    <h4 style="color: #856404; margin-bottom: 1rem;"><i class="fas fa-tshirt"></i> WARDROBE ASSESSMENT</h4>
+                    <p style="margin-bottom: 0;">Take some time to assess your current wardrobe and identify pieces that align with professional speaking engagements. Make any necessary additions or adjustments.</p>
+                </div>
 
                 <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
-                    <h3>📚 Get the Complete Book</h3>
-                    <p>Access all 6 laws including The Law of Dress Code with practical guidelines and examples:</p>
+                    <h3>📚 Almost There!</h3>
+                    <p>You've mastered 5 out of 6 laws. Complete your journey with the final law:</p>
                     <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
                         <a href="buy.html" class="btn btn-primary">
-                            📖 Buy the Complete Book
+                            📖 Get the Complete Book
                         </a>
                     </div>
                 </div>
@@ -198,29 +271,104 @@ const bookContent = {
             title: "The Law of Preparation",
             content: `
                 <h2>Chapter Six: The Law of Preparation</h2>
-                <h3 style="color: var(--secondary-color); margin-bottom: 2rem;">Coming Soon in the Full Book</h3>
+                <h3 style="color: var(--secondary-color); margin-bottom: 2rem;">Because Every Second Counts on Stage and in Life</h3>
 
-                <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
-                    <p><strong>📖 Preview Available</strong> - This chapter covers the sixth and final fundamental law of public speaking.</p>
-                </div>
+                <blockquote style="font-style: italic; font-size: 1.2rem; color: var(--primary-color); margin: 2rem 0; padding: 1rem; border-left: 4px solid var(--accent-color);">
+                    "Success is where preparation and opportunity meet." — Bobby Unser
+                </blockquote>
 
-                <p>Master the art of thorough preparation that transforms anxiety into confidence. Learn systematic approaches to preparing for any speaking opportunity.</p>
+                <p>There's a powerful truth that separates the good from the great, the average from the exceptional, and the unprepared from the unforgettable. That truth is preparation. If you want to become a remarkable public speaker, someone who holds people's attention, moves hearts, and influences minds, then you must understand and embrace The Law of Preparation.</p>
 
-                <h3>What You'll Learn:</h3>
+                <p>Let's start with a simple question: If you were called upon today to speak in front of a thousand people, are you ready? Would you be able to confidently walk up, own the stage, and deliver something memorable? Most people would panic. But why? Because deep down, they know they haven't prepared.</p>
+
+                <h3>Preparation is the Foundation of Confidence</h3>
+                <p>Have you ever watched a student walk into an exam hall with a smile, sitting with shoulders squared, already certain of their victory? That's the power of preparation. The opposite is also true—if you've ever gone into a test without studying, you know the feeling: shaky hands, a racing heart, a foggy mind.</p>
+
+                <p>It's the same with public speaking. When you've taken the time to prepare—your message, your mindset, and your materials—you'll feel unstoppable. Preparation eliminates fear and replaces it with confidence.</p>
+
+                <p>Think of a pastor stepping up on Sunday morning to deliver a sermon. If that pastor has studied the scriptures, prayed, and thought deeply about the message for the congregation, something powerful happens. Their words carry weight. Their delivery flows naturally. The Spirit backs their preparation.</p>
+
+                <p>Executives also know this well. Before any boardroom presentation or pitch to investors, they review data, rehearse their talking points, anticipate questions, and sometimes even role-play with team members. They don't "wing it" because they know what's at stake.</p>
+
+                <p>The same principle applies whether you're speaking at a school assembly, preaching in church, or pitching a business idea—those who prepare are the ones who prevail.</p>
+
+                <h3>Preparation is Like Farming</h3>
+                <p>Let's borrow a timeless analogy. Imagine you are a farmer. You want a great harvest. What do you do? Do you sit back and pray that your land magically yields crops? Of course not. You till the soil, you plant seeds, you water consistently, and you protect your field from pests.</p>
+
+                <p>Public speaking is no different. Your words are your seeds. The audience is your soil. Your preparation is the process of planting, watering, and nurturing. And just like the farmer, you cannot expect a harvest if you skip the process.</p>
+
+                <p>Many people admire great speakers and say, "Wow, they're so gifted." But what they don't see is the hours spent practicing in front of mirrors, recording and re-recording voice notes, researching content, and rehearsing over and over again. That's the part most people want to skip, and yet, it's where the power lies.</p>
+
+                <h3>Mental Rehearsal: Your Inner Stage</h3>
+                <p>Now, preparation is not just about memorizing lines or slides. It also involves preparing your mind and emotions. This is where mental rehearsal becomes your secret weapon.</p>
+
+                <p>Picture this: a professional footballer doesn't just train on the field. They also visualize the match the night before, imagining the crowd, the goals, the passes. Similarly, if you want to perform excellently on stage, begin by seeing yourself doing it.</p>
+
+                <p>Close your eyes. Imagine the room. Hear the applause. Feel your heartbeat steady. See yourself walking to the microphone with ease. Hear your voice sounding clear and strong. See people leaning in to listen. Visualize them nodding, laughing at your jokes, writing down your key points. That inner movie prepares your emotions for the real event.</p>
+
+                <p>This technique is used by athletes, actors, soldiers, and top executives. Why not you? The stage is first conquered in the mind before it's conquered in reality.</p>
+
+                <h3>Small Details Make a Big Difference</h3>
+                <p>It's not just the big moments that count. Sometimes, the little things determine whether a presentation is great or just average.</p>
+
                 <ul>
-                    <li>Comprehensive preparation strategies</li>
-                    <li>Turning fear into confidence through readiness</li>
-                    <li>Research and content development techniques</li>
-                    <li>Rehearsal methods that work</li>
-                    <li>Mental and physical preparation</li>
+                    <li>Have you checked if your slide font is readable from the back row?</li>
+                    <li>Do your examples make sense to your specific audience?</li>
+                    <li>Is your attire appropriate and confidence-boosting?</li>
+                    <li>Have you timed your speech to avoid rushing or dragging?</li>
+                    <li>Do you know the first sentence you'll say the moment you get the mic?</li>
                 </ul>
 
+                <p>Think of preparation like setting the table for a banquet. You could cook the most delicious meal, but if the plates are dirty or the table is wobbly, your guests won't enjoy it. Great speakers sweat the small stuff, and that's what separates them.</p>
+
+                <h3>The Unexpected is Inevitable—Prepare Anyway</h3>
+                <p>Let's be honest. Even with the best preparation, unexpected things can happen. The mic might stop working. Your slides might freeze. Someone may interrupt. But guess what? The better prepared you are, the easier it is to adapt.</p>
+
+                <p>Preparation gives you flexibility. It gives you the confidence to say, "No problem, I've got this." The speaker who has practiced well can adjust to anything without losing their cool. They may even gain extra respect for their composure.</p>
+
+                <p>Remember David in the Bible? Before he faced Goliath, he had already been practicing in the wilderness, slaying lions and bears. That battle wasn't his first rodeo—it was the result of years of preparation. Goliath just happened to be the stage.</p>
+
+                <h3>Success is Predictable When You Prepare</h3>
+                <p>Let's break it down.</p>
+
+                <ul>
+                    <li>A student who prepares doesn't fear exams.</li>
+                    <li>A pastor who prepares carries a deeper anointing in their message.</li>
+                    <li>An executive who prepares earns respect and influence in the boardroom.</li>
+                    <li>A public speaker who prepares captivates and connects.</li>
+                </ul>
+
+                <p>Don't wait for your "big moment" to start getting ready. By then, it might be too late. Instead, prepare like every day is your audition, and every audience is your opportunity.</p>
+
+                <h3>Final Thoughts: Start Today</h3>
+                <p>Preparation doesn't make you perfect, but it positions you for excellence. You may not control the size of the audience, the lighting in the room, or the type of microphone. But you can control your readiness.</p>
+
+                <p>Great speakers are not born. They are built—through discipline, through practice, and through thoughtful, consistent preparation.</p>
+
+                <p>So, whether you're standing before a classroom, a congregation, or a conference crowd, never forget:</p>
+
+                <p style="text-align: center; font-size: 1.2rem; color: var(--primary-color); font-weight: 600; margin: 2rem 0;">
+                    The more you sweat in preparation, the less you'll bleed in performance.
+                </p>
+
+                <p>Now, ask yourself: What am I doing today to prepare for the opportunity I say I want tomorrow?</p>
+
+                <p>Because when preparation meets opportunity, that's when greatness shows up.</p>
+
+                <div style="background: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                    <h4 style="color: #2d5a2d; margin-bottom: 1rem;"><i class="fas fa-clipboard-check"></i> ACTION STEP</h4>
+                    <p style="margin-bottom: 0;">Take a deep breath and close your eyes. Set aside just a few moments for this visualization exercise. Picture yourself standing confidently in front of your audience, delivering a successful presentation. Imagine the room filled with engaged listeners, nodding along and hanging onto your every word. Feel the confidence radiating from within you as you speak with clarity and conviction. Notice the positive energy flowing through you, and envision the audience responding enthusiastically to your message.</p>
+                </div>
+
                 <div style="text-align: center; margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px;">
-                    <h3>📚 Get the Complete Book</h3>
-                    <p>Access all 6 laws including The Law of Preparation with detailed action steps:</p>
+                    <h3>🎉 Congratulations!</h3>
+                    <p>You've completed all 6 Laws of Public Speaking. Continue your journey with the complete book:</p>
                     <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
                         <a href="buy.html" class="btn btn-primary">
-                            📖 Buy the Complete Book
+                            📖 Get the Complete Book
+                        </a>
+                        <a href="testimonials.html" class="btn btn-secondary">
+                            💬 Read Testimonials
                         </a>
                     </div>
                 </div>
