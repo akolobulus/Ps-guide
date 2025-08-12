@@ -70,7 +70,7 @@
                     <div class="book-highlights">
                         <h3>What You Get:</h3>
                         <ul class="highlights-list">
-                            <li><i class="fas fa-check"></i> 250 pages of expert guidance</li>
+                            <li><i class="fas fa-check"></i> 50 pages of expert guidance</li>
                             <li><i class="fas fa-check"></i> 12 comprehensive chapters</li>
                             <li><i class="fas fa-check"></i> Practical exercises and examples</li>
                             <li><i class="fas fa-check"></i> Bonus worksheets and templates</li>
@@ -82,7 +82,8 @@
 
                 <div class="purchase-details">
                     <h2>Simplest Guide to Public Speaking</h2>
-                    <p class="book-author">by Favour Ebi Dakoru</p>
+                    <p class="book-author">by Favour Ebi Dakoru | Pages: 50 | Language: English | Format: Digital & Print</p>
+                    <p>This powerful guide distills years of practical experience into six fundamental laws that will transform how you speak, connect, and inspire. Culturally tuned for Nigerian and African audiences, yet adaptable to any stage worldwide.</p>
 
                     <div class="pricing-section">
                         <div class="price-card featured">
@@ -282,22 +283,22 @@
             <div class="modal-body">
                 <form id="customerForm">
                     <p>Please provide your information to complete the purchase:</p>
-                    
+
                     <div class="form-group">
                         <label for="customerName">Full Name *</label>
                         <input type="text" id="customerName" name="customerName" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="customerEmail">Email Address *</label>
                         <input type="email" id="customerEmail" name="customerEmail" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="customerPhone">Phone Number *</label>
                         <input type="tel" id="customerPhone" name="customerPhone" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="customerCountry">Country *</label>
                         <select id="customerCountry" name="customerCountry" required>
@@ -312,11 +313,11 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-                    
+
                     <div class="purchase-summary" id="purchaseSummary">
                         <!-- Purchase details will be populated here -->
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary">
                         <i class="fas fa-credit-card"></i> Proceed to Payment
                     </button>
@@ -333,20 +334,20 @@
         // Global variables for payment
         let selectedEdition = '';
         let customerData = {};
-        
+
         // Initialize customer modal functionality
         function initiateFlutterwavePayment(edition) {
             selectedEdition = edition;
-            
+
             // Show customer info modal first
             openCustomerModal(edition);
         }
-        
+
         // Open customer info modal
         function openCustomerModal(edition) {
             const modal = document.getElementById('customerModal');
             const summary = document.getElementById('purchaseSummary');
-            
+
             // Populate purchase summary
             let price, title, description;
             if (edition === 'digital') {
@@ -358,7 +359,7 @@
                 title = 'Print Edition';
                 description = 'Physical book + Digital copy with author\'s signature';
             }
-            
+
             summary.innerHTML = `
                 <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
                     <h4>Purchase Summary</h4>
@@ -369,28 +370,28 @@
                     <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">${description}</p>
                 </div>
             `;
-            
+
             modal.style.display = 'block';
             document.body.style.overflow = 'hidden';
         }
-        
+
         // Close customer modal
         function closeCustomerModal() {
             const modal = document.getElementById('customerModal');
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
-            
+
             // Reset form
             document.getElementById('customerForm').reset();
         }
-        
+
         // Handle customer form submission
         document.addEventListener('DOMContentLoaded', function() {
             const customerForm = document.getElementById('customerForm');
             if (customerForm) {
                 customerForm.addEventListener('submit', function(e) {
                     e.preventDefault();
-                    
+
                     // Collect customer data
                     customerData = {
                         name: document.getElementById('customerName').value,
@@ -398,21 +399,21 @@
                         phone: document.getElementById('customerPhone').value,
                         country: document.getElementById('customerCountry').value
                     };
-                    
+
                     // Close customer modal
                     closeCustomerModal();
-                    
+
                     // Process payment
                     processFlutterwavePayment();
                 });
             }
         });
-        
+
         // Process Flutterwave payment with customer data
         function processFlutterwavePayment() {
             // Payment configuration
             let paymentConfig;
-            
+
             if (selectedEdition === 'digital') {
                 paymentConfig = {
                     public_key: "FLWPUBK_TEST-68f8b6b6c0ada267982888334ff3725d-X",
@@ -460,18 +461,18 @@
                     }
                 };
             }
-            
+
             // Add callback functions
             paymentConfig.callback = function (data) {
                 console.log("Payment successful:", data);
-                
+
                 // Show success message
                 if (window.showNotification) {
                     window.showNotification('Payment successful! You will receive your book shortly.', 'success');
                 } else {
                     alert('Payment successful! You will receive your book shortly.');
                 }
-                
+
                 // Store purchase info for confirmation
                 localStorage.setItem('lastPurchase', JSON.stringify({
                     ...customerData,
@@ -480,32 +481,32 @@
                     amount: data.amount,
                     timestamp: new Date().toISOString()
                 }));
-                
+
                 // In a real implementation, you would:
                 // 1. Verify the payment on your server using the transaction reference
                 // 2. Send the digital book to the customer's email
                 // 3. Update your database with the purchase record
                 // 4. Send confirmation email with download links
                 // 5. For print books, initiate shipping process
-                
+
                 // Redirect to a thank you page
                 setTimeout(() => {
                     window.location.href = 'index.html?payment=success&tx_ref=' + data.tx_ref;
                 }, 2000);
             };
-            
+
             paymentConfig.onclose = function() {
                 console.log("Payment cancelled by user");
-                
+
                 if (window.showNotification) {
                     window.showNotification('Payment cancelled. You can try again anytime.', 'error');
                 }
             };
-            
+
             // Launch Flutterwave payment modal
             FlutterwaveCheckout(paymentConfig);
         }
-        
+
         // Handle successful payment redirect
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -515,7 +516,7 @@
                     if (window.showNotification) {
                         window.showNotification('Welcome back! Your payment was processed successfully.', 'success');
                     }
-                    
+
                     // Show purchase confirmation if available
                     const lastPurchase = localStorage.getItem('lastPurchase');
                     if (lastPurchase) {
@@ -526,7 +527,7 @@
                 }, 1000);
             }
         });
-        
+
         // Close modal when clicking outside
         document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('customerModal');
@@ -537,7 +538,7 @@
                     }
                 });
             }
-            
+
             // Close modal with Escape key
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && modal.style.display === 'block') {
