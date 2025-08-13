@@ -7,8 +7,10 @@
     <meta name="keywords" content="buy public speaking book, purchase communication guide, Amazon books, digital book, physical book">
     <meta name="author" content="Favour Ebi Dakoru">
     <title>Buy Now - Simplest Guide in Public Speaking</title>
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -78,7 +80,7 @@
                         <div class="book-slide">
                             <img src="IMG-20250707-WA0012_1751897527384.jpg" alt="Book Cover" class="book-cover-purchase">
                         </div>
-                      
+
                     <div class="book-highlights">
                         <h3>What You Get:</h3>
                         <ul class="highlights-list">
@@ -239,6 +241,7 @@
                         <li><a href="about-author.html">About Author</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="community.html">Community</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -328,20 +331,20 @@
             openCustomerModal(edition);
         }
 
-        // Open customer info modal
+        // Open customer modal
         function openCustomerModal(edition) {
             const modal = document.getElementById('customerModal');
             const summary = document.getElementById('purchaseSummary');
 
             // Populate purchase summary
             let price, title, description;
-            if (edition === 'digital') {
-                price = '₦5,000';
+            if (selectedEdition === 'digital') {
+                price = '₦3,000';
                 title = 'Digital Edition';
                 description = 'PDF + EPUB formats with bonus materials';
             } else {
-                price = '₦8,000';
-                title = 'Print Edition';
+                price = '₦4,000';
+                title = 'Physical Copy';
                 description = 'Physical book + Digital copy with author\'s signature';
             }
 
@@ -403,7 +406,7 @@
                 paymentConfig = {
                     public_key: "FLWPUBK_TEST-68f8b6b6c0ada267982888334ff3725d-X",
                     tx_ref: "digital_book_" + Date.now(),
-                    amount: 5000,
+                    amount: 3000,
                     currency: "NGN",
                     payment_options: "card,mobilemoney,ussd,banktransfer,qr,mpesa,ghana_mobile_money,rwanda_mobile_money,zambia_mobile_money,uganda_mobile_money",
                     customer: {
@@ -426,7 +429,7 @@
                 paymentConfig = {
                     public_key: "FLWPUBK_TEST-68f8b6b6c0ada267982888334ff3725d-X",
                     tx_ref: "print_book_" + Date.now(),
-                    amount: 8000,
+                    amount: 4000,
                     currency: "NGN",
                     payment_options: "card,mobilemoney,ussd,banktransfer,qr,mpesa,ghana_mobile_money,rwanda_mobile_money,zambia_mobile_money,uganda_mobile_money",
                     customer: {
@@ -435,7 +438,7 @@
                         name: customerData.name,
                     },
                     customizations: {
-                        title: "Simplest Guide to Public Speaking - Print Edition",
+                        title: "Simplest Guide to Public Speaking - Physical Copy",
                         description: "Physical book + Digital copy with author's signature",
                         logo: "https://via.placeholder.com/150x50/FFB400/001F54?text=LOGO",
                     },
